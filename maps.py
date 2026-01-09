@@ -1,4 +1,5 @@
 import random as ran, cursor as cur, os
+
 # высота и ширина карты
 height = 46
 width = 156
@@ -22,6 +23,7 @@ def generate(teritory):
         g = colors[1]
         b = colors[2]
     print(f"\033[38;2;{r};{g};{b}m{teritory["char"]}\033[0m", end="", flush=True)
+
 # основная отрисовка
 while True:
     with cur.HiddenCursor():
@@ -38,4 +40,5 @@ while True:
             print("")
     input("\nНажмите Enter чтобы сгенерировать заново: ")
     os.system("cls")
+
 
