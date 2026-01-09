@@ -1,8 +1,8 @@
 from string import ascii_letters
-import random as r
-import os, time, cursor
+import random as r, os, time, cursor
+
 os.system("")
-os.system("title PARTYYY")
+os.system("title partyy")
 
 with cursor.HiddenCursor():
         while True:
